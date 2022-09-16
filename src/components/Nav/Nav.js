@@ -25,7 +25,7 @@ function Header() {
         <NavLink  onClick={()=>handleClick("stats")} to='/stats'>
             <img src={stats} alt='status' className={active==="stats" ? 'header__icon': ''}></img>        
         </NavLink>
-        <NavLink  onClick={()=>handleClick("watch")}  to="/watch-live">
+        <NavLink  onClick={()=>handleClick("watch")}  to="/watch">
             <img src={watch} alt='watch'  className={active==="watch" ? 'header__icon': ''} ></img>
         </NavLink>
         <NavLink onClick={()=>handleClick("forum")}>
