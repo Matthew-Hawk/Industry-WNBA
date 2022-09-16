@@ -28,11 +28,11 @@ function Header() {
         <NavLink  onClick={()=>handleClick("watch")}  to="/watch">
             <img src={watch} alt='watch'  className={active==="watch" ? 'header__icon': ''} ></img>
         </NavLink>
-        <NavLink onClick={()=>handleClick("forum")}>
-            <img src={play} alt='forum' className={active==="forum" ? 'header__icon': ''} ></img>
-        </NavLink>
         <NavLink onClick={()=>handleClick("play")} to="/play">
-            <img src={play} alt='play' className={active==="play" ? 'header__icon': ''} ></img>
+            <img src={play} alt='play' className={`play ${active==="play" ? 'header__icon': ''}`} ></img>
+        </NavLink>
+        <NavLink onClick={()=>handleClick("shop")} to="/shop">
+            <img src={Shop} alt='shop' className={active==="shop" ? 'header__icon': ''} ></img>
         </NavLink>
     </div>
   )
