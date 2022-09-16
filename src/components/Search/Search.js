@@ -8,11 +8,12 @@ import profile from "../../assets/icons/Profile.svg";
 import { useState } from "react";
 
 const Search = () => {
-	const [sparkleOn, setSparkleOn] = useState(true);
+	const [sparkleOn, setSparkleOn] = useState(window.location.pathname === "/trending"? false:true);
 
 	const toggleSparkle = () => {
 		sparkleOn ? setSparkleOn(false) :setSparkleOn(true);
 	}
+
 	return (
 		<section className="search__section">
 			<div className="search__logo-container">
