@@ -3,10 +3,12 @@
     justify-content: space-between;
     align-items: center;
     background: black;
-    padding: 2rem 0.5rem 1rem;
+    padding: 2rem 1rem 1rem;
 
     &__title {
         color: white;
+        font-size: 1.3rem;
+        letter-spacing: 1.5px;
     }
 }
 

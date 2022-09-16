@@ -1,5 +1,10 @@
 @use "../../styles/global.scss" as *;
+@use "../../styles/partials/utilities.scss" as *;
 
 .watch-live {
-    background-color: black;
+    background-color: $Black;
+
+    &__video {
+        width: 100%;
+    }
 }

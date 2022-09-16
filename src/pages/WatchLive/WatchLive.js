@@ -2,12 +2,13 @@ import './WatchLive.scss'
 import WatchHeader from '../../components/WatchHeader/WatchHeader';
 import videoData from '../../data/youtube-data.json';
 import Comments from '../../components/Comments/Comments';
+import thumbnail from '../../assets/images/video-thumbnail.png';
 
 const WatchLive = () => {
     return (
         <main className="watch-live">
             <WatchHeader />
-            <video src={videoData[0].video}></video>
+            <video className="watch-live__video" src={videoData[0].video} poster={thumbnail}></video>
             <Comments />
         </main>
     )
