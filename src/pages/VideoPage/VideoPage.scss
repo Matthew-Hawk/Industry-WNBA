@@ -1,5 +1,16 @@
-// .videos {
-// 	&__container {
-// 		display: flex;
-// 	}
-// }
+@use "../../styles/global.scss" as *;
+@use "../../styles/partials/utilities.scss" as *;
+
+.videos {
+	&__section {
+		background-color: $Black;
+		padding: 5%;
+	}
+
+	&__title {
+		color: $White;
+		font-size: 1rem;
+		font-weight: 400;
+		padding: 1% 5%;
+	}
+}

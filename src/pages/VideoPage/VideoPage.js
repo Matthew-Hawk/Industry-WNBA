@@ -6,9 +6,9 @@ import Search from "../../components/Search/Search";
 
 const VideoPage = () => {
 	return (
-		<section>
+		<section className="videos__section">
 			<Search />
-			<h1>Trading Videos</h1>
+			<h2 className="videos__title">As We Rise: 26 Years of the WNBA</h2>
 
 			<div className="videos__container">
 				{VideoData.map((video, i) => (
