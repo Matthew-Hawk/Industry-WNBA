@@ -2,10 +2,10 @@
 @use "../../styles/partials/mixins.scss" as *;
 @use "../../styles/partials/utilities.scss" as *;
 
-.header{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.header {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 
     position: sticky;
     bottom: 0rem;
@@ -19,4 +19,5 @@
     &__icon{
         filter: invert(48%) sepia(18%) saturate(3311%) hue-rotate(342deg) brightness(99%) contrast(98%);
     }
+
 }

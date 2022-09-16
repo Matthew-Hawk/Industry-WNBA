@@ -6,9 +6,9 @@ import "./HomePage.scss";
 
 const HomePage = () => {
 	return (
-		<section>
+		<section className="homepage">
 			<Search />
-			<h1>Your Personalized Feed!</h1>
+			<h1 className="homepage__title">YOUR FEED</h1>
 			<div>
 				{data.map((articleData) => (
 					<Articles articleData={articleData} />
