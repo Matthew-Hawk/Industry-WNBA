@@ -1,4 +1,4 @@
-import './WatchLive.scss'
+import './WatchVideo.scss'
 import { useState } from 'react';
 import thumbnail from '../../assets/images/video-thumbnail.png';
 import heartIcon from '../../assets/icons/heart.svg';
@@ -10,7 +10,7 @@ import WatchHeader from '../../components/WatchHeader/WatchHeader';
 import Comments from '../../components/Comments/Comments';
 import CourtAnalytics from '../../components/CourtAnalytics/CourtAnalytics';
 
-const WatchLive = () => {
+const WatchVideo = () => {
     const [ showAnalytics, setShowAnalytics ] = useState(false);
     const [ likeVideo, setLikeVideo ] = useState(false);
 
@@ -39,4 +39,4 @@ const WatchLive = () => {
     )
 }
 
-export default WatchLive;
+export default WatchVideo;
