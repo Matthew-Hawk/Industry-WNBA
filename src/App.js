@@ -6,11 +6,11 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-            <Route />      
+          <Route path="/" element={<HomePage />} />
         </Routes>
       </BrowserRouter>
     </>
-  )
+  );
 }
 
 export default App
