@@ -1,10 +1,10 @@
 import './Header.scss'
 import {NavLink} from "react-router-dom"
-import forum from '../../data/Icons/forum.svg'
-import home from '../../data/Icons/home.svg'
-import play from '../../data/Icons/play.svg'
-import stats from '../../data/Icons/stats.svg'
-import watch from "../../data/Icons/watch.svg"
+import forum from '../../assets/icons/forum.svg'
+import home from '../../assets/icons/home.svg'
+import play from '../../assets/icons/play.svg'
+import stats from '../../assets/icons/stats.svg'
+import watch from "../../assets/icons/watch.svg"
 
 
 function Header() {
