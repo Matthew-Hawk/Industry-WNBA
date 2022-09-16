@@ -10,6 +10,7 @@
 		font-size: 1rem;
 		font-weight: 600;
 		padding: 2% 0;
+		margin-left:1rem;
 	}
 
 	&__link-container {
@@ -30,4 +31,9 @@
 
 .box {
 	margin-bottom: 1rem;
+}
+
+.container {
+	margin-left:1rem;
+	width: 90%;
 }
