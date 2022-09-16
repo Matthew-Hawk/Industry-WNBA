@@ -1,0 +1,108 @@
+@use "../../styles/global.scss" as *;
+@use "../../styles/partials/utilities.scss" as *;
+
+.players {
+	&__section {
+		background-color: $Black;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__logo {
+		height: 3rem;
+		margin: 3rem 0rem 0rem;
+	}
+
+	&__title {
+		color: $White;
+		font-size: 1.2rem;
+		font-weight: 500;
+		text-align: center;
+		padding: 2rem 0;
+	}
+
+	&__img {
+		border-radius: 50%;
+		background-color: $White;
+		border: 3px solid $Black;
+		margin-bottom: 0.5rem;
+
+		&:hover {
+			border: 3px solid $Orange;
+		}
+
+		&--follow {
+			border: 3px solid $Orange;
+		}
+	}
+
+	&__container {
+		flex-basis: 22%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-bottom: 1.25rem;
+
+		&--follow {
+			width: 21%;
+			margin-left: 1rem;
+		}
+	}
+
+	&__name {
+		text-align: center;
+		color: $DarkGray;
+		font-size: 0.8rem;
+		height: 2rem;
+	}
+
+	&__logo-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		padding: 0 1rem;
+	}
+
+	&__logo-tag {
+		width: 3rem;
+		max-height: 5rem;
+	}
+
+	&__time {
+		align-self: flex-start;
+		font-size: 1.25rem;
+		font-weight: 500;
+		line-height: 18px;
+		color: $White;
+		padding: 1rem;
+		margin-left: 1rem;
+	}
+
+	&__btn {
+		margin: 3rem 0;
+		padding: 0.8rem 7rem;
+	}
+
+	&__search {
+		background: url("../../assets/icons/magnifying\ glass.svg") no-repeat 95%, $LightGray;
+		width: 85%;
+		padding: 0.6rem 1rem;
+		border-radius: 5rem;
+		margin-bottom: 2rem;
+
+		&::placeholder {
+			color: $DarkGray;
+		}
+	}
+
+	&__follow {
+		display: none;
+
+		&--show {
+			display: block;
+			width: 100%;
+		}
+	}
+}

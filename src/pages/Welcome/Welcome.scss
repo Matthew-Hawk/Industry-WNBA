@@ -1,0 +1,68 @@
+@use "../../styles/global.scss" as *;
+@use "../../styles/partials/utilities.scss" as *;
+
+.welcome {
+	&__section {
+		background-color: $Black;
+		padding: 5%;
+	}
+
+	&__logo-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__logo {
+		height: 3rem;
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&__title {
+		color: $White;
+		font-size: 20px;
+		font-weight: 500;
+		text-align: center;
+	}
+
+	&__text {
+		color: $DarkGray;
+		font-size: 12px;
+		font-weight: 500;
+		text-align: center;
+	}
+
+	&__log {
+		color: $DarkGray;
+		font-size: 12px;
+		font-weight: 500;
+		text-align: center;
+		margin-top: 2.5rem;
+	}
+
+	&__login {
+		color: #6282f6;
+	}
+
+	&__btn {
+		height: 43px;
+		width: 100%;
+		left: 16px;
+		top: 16px;
+		border-radius: 3px;
+		padding: 8px 0px 8px 8px;
+		background: #e75a28;
+		color: $White;
+		margin-top: 4rem;
+		margin-bottom: 1rem;
+	}
+
+	&__image {
+		margin: 1rem 0 3rem;
+	}
+}

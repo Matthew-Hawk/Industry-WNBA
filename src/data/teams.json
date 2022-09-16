@@ -1,0 +1,50 @@
+[
+	{
+		"team": "Las Vegas Aces",
+		"logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Las_Vegas_Aces_logo.svg/1200px-Las_Vegas_Aces_logo.svg.png"
+	},
+	{
+		"team": "Connecticut Sun",
+		"logo": "https://lh3.googleusercontent.com/1uXP45XrdXdJu-Mpx7WawhHVuGEcy_Jr3ehmzBb0TLYSqMfzOTEjqB0vrJT87WCbTk2S433r5kYvMYCO9Qtle8HD_w"
+	},
+	{
+		"team": "Chicago Sky",
+		"logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fc/Chicago_Sky_logo.svg/1200px-Chicago_Sky_logo.svg.png"
+	},
+	{
+		"team": "Seatle Storm",
+		"logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/sea.png"
+	},
+	{
+		"team": "Phoenix Mercury",
+		"logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/phx.png"
+	},
+	{
+		"team": "Los Angeles Sparks",
+		"logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Los_Angeles_Sparks_logo.svg/1200px-Los_Angeles_Sparks_logo.svg.png"
+	},
+	{
+		"team": "Dalas Wings",
+		"logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/95/Dallas_Wings_logo.svg/1200px-Dallas_Wings_logo.svg.png"
+	},
+	{
+		"team": "Washington Mystics",
+		"logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/wsh.png"
+	},
+	{
+		"team": "Indiana Fever",
+		"logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/ind.png"
+	},
+	{
+		"team": "Minnesota Lynx",
+		"logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/min.png"
+	},
+	{
+		"team": "Atlanta Dream",
+		"logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/atl.png"
+	},
+	{
+		"team": "New York Libery",
+		"logo": "https://www.oursportscentral.com/graphics/pictures/md20200414-527493.jpg"
+	}
+]

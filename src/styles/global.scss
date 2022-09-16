@@ -17,3 +17,12 @@ body {
   font-family: "Knockout", sans-serif;
 }
 
+.button {
+  background-color: $Orange;
+  color: $White;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+

@@ -1,0 +1,76 @@
+@use "../../styles/global.scss" as *;
+@use "../../styles/partials/utilities.scss" as *;
+
+.teams {
+	&__section {
+		background-color: $Black;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__logo {
+		height: 3rem;
+		margin: 3rem 0rem 0rem;
+	}
+
+	&__title {
+		color: $White;
+		font-size: 20px;
+		font-weight: 500;
+		text-align: center;
+		padding: 2rem 1rem;
+	}
+
+	&__logo-container {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-bottom: 1rem;
+	}
+
+	&__logo-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex-basis: 25%;
+		height: 5.5rem;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		margin: 1rem 0;
+	}
+
+	&__logo-tag {
+		width: 3rem;
+		max-height: 3.5rem;
+		border: 2px solid $Black;
+
+		&:hover {
+			border: 2px solid $Orange;
+		}
+	}
+
+	&__name {
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 18px;
+		letter-spacing: -0.019em;
+		text-align: center;
+		color: #c6bdbd;
+		width: 80%;
+		height: 2rem;
+	}
+
+	&__btn {
+		margin: 3rem 0;
+		padding: 0.8rem 7rem;
+	}
+}
+
+.back {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+}
