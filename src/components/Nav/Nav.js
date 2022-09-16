@@ -31,7 +31,7 @@ function Header() {
         <NavLink onClick={()=>handleClick("forum")}>
             <img src={forum} alt='forum' className={active==="forum" ? 'header__icon': ''} ></img>
         </NavLink>
-        <NavLink onClick={()=>handleClick("play")}>
+        <NavLink onClick={()=>handleClick("play")} to="/play">
             <img src={play} alt='play' className={active==="play" ? 'header__icon': ''} ></img>
         </NavLink>
     </div>
