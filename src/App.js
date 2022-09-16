@@ -16,6 +16,7 @@ import PlayPage from "./pages/PlayPage/PlayPage";
 import Shopping from "./pages/ShoppingPage/Shopping";
 import StatsPage2 from "./pages/Stats/extend-page/StatsPage2";
 import StatsPage3 from "./pages/Stats/extend-page/StatsPage3";
+import WatchShare from "./pages/WatchLive/WatchShare"
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
 					<Route path="/trending" element={<TrendingPage />} />
 					<Route path="/watch" element={<WatchPage />} />
 					<Route path="/watch/:videoId" element={<WatchLive />} />
+					<Route path="/watch/:videoId/share" element={<WatchShare />} />
 					<Route path="/artical" element={<Artical />} />
 					<Route path="/stats" element={<StatsPage />} />
 					<Route path="/stats/page2" element={<StatsPage2 />} />
