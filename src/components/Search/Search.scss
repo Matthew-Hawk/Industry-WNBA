@@ -1,0 +1,39 @@
+.search {
+	&__section {
+		background-color: black;
+		padding: 5%;
+	}
+
+	&__logo-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__logo {
+		width: 5rem;
+		height: 3rem;
+	}
+	&__input {
+		background-image: url("../../assets/icons/search-24px.svg");
+		background-repeat: no-repeat;
+		background-position-x: 95%;
+		background-position-y: 50%;
+		height: 2.25rem;
+		width: 100%;
+		border-radius: 1.25rem;
+		border: 0.0625rem solid gray;
+		background-color: white;
+		margin: 1rem 0;
+
+		&::placeholder {
+			padding-left: 1rem;
+		}
+
+		&-container {
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+		}
+	}
+}
