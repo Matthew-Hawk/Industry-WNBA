@@ -14,6 +14,9 @@ import PlayersPage from "./pages/PlayersPage/PlayerPage";
 import TrendingPage from "./pages/TrendingPage/TrandingPage";
 import PlayPage from "./pages/PlayPage/PlayPage";
 import Shopping from "./pages/ShoppingPage/Shopping";
+import StatsPage2 from "./pages/Stats/extend-page/StatsPage2";
+import StatsPage3 from "./pages/Stats/extend-page/StatsPage3";
+
 
 function App() {
 	const [showOnboarding, setShowOnboarding] = useState(true);
@@ -40,8 +43,11 @@ function App() {
 					<Route path="/watch/:videoId" element={<WatchLive />} />
 					<Route path="/artical" element={<Artical />} />
 					<Route path="/stats" element={<StatsPage />} />
-					<Route path="/play" element={<PlayPage />} />
-					<Route path="/store" element={<Shopping />} />
+					<Route path="/stats/page2" element={<StatsPage2 />} />
+					<Route path="/stats/page3" element={<StatsPage3 />} />
+          <Route path="/play" element={<PlayPage />} />
+          <Route path="/store" element={<Shopping />} />
+
 				</Routes>
 
 				{showOnboarding ? null : <Nav />}
