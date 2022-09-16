@@ -1,20 +1,20 @@
-import {BrowserRouter, Routes, Route} from "react-router-dom"
-import HomePage from "./pages/HomePage/HomePage"
-import Header from  "./components/Header/Header"
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage/HomePage';
+import WatchLive from './pages/WatchLive/WatchLive';
+import Header from './components/Header/Header';
 
 function App() {
-  
-	return (
-		<div className="body">
-			<BrowserRouter>
-				<Routes>
-					<Route path="/" element={<HomePage />} />
-				</Routes>
+  return (
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/watch-live" element={<WatchLive />} />
+        </Routes>
         <Header />
-			</BrowserRouter>
-		</div>
-	);
+      </BrowserRouter>
+    </>
+  );
 }
 
-export default App
+export default App;

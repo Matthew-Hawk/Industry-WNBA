@@ -1,5 +1,6 @@
 @use "./partials/utilities.scss" as *;
 @use "./partials/mixins.scss" as *;
+@use "./partials/typography.scss" as *;
 
 *, *::before, *::after {
   margin: 0;
@@ -10,5 +11,9 @@
 Link,
 a {
   text-decoration: none;
+}
+
+body {
+  font-family: "Knockout", sans-serif;
 }
 
