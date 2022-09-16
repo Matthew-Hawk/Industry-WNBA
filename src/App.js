@@ -12,6 +12,7 @@ import StatsPage from "./pages/Stats/Stats";
 import TeamsPage from "./pages/TeamsPage/TeamsPage";
 import PlayersPage from "./pages/PlayersPage/PlayerPage";
 import PlayPage from "./pages/PlayPage/PlayPage";
+import Shopping from "./pages/ShoppingPage/Shopping";
 
 function App() {
   const [ showOnboarding, setShowOnboarding ] = useState(true);
@@ -30,6 +31,7 @@ function App() {
 					<Route path="/artical/:id" element={<Artical />} />
 					<Route path="/stats" element={<StatsPage />} />
           <Route path="/play" element={<PlayPage />} />
+          <Route path="/store" element={<Shopping />} />
 				</Routes>
 
 				{showOnboarding ? null : <Nav />}

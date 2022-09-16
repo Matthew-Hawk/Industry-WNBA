@@ -12,7 +12,7 @@ const PlayPage = () => {
 
     return (
         <main className="play">
-            <input type="image" src={showStart ? playStart : playMain} alt="watch page" onClick={closeStart} />
+            <input type="image" src={showStart ? playStart : playMain} alt="play page" onClick={closeStart} />
         </main>
     )
 }
