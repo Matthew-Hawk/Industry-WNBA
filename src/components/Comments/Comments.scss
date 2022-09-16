@@ -1,0 +1,38 @@
+@use "../../styles/partials/utilities.scss" as *;
+
+.comment-cta {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+
+    &__button {
+        background-color: $Orange;
+        color: $White;
+        border: none;
+        padding: 0.8rem 1.4rem;
+        border-radius: 3px;
+        font-size: 1rem;
+    }
+
+    &__icons {
+        margin-left: auto;
+    }
+
+    &__like {
+        margin-right: 0.75rem;
+    }
+
+    &__share {
+        filter: invert(48%) sepia(18%) saturate(3311%) hue-rotate(342deg) brightness(99%) contrast(98%);
+        width: 1.5rem;
+    }
+}
+
+.live-chat {
+    padding: 1rem;
+
+    &__title {
+        color: $White;
+        font-size: 1.3rem;
+    }
+}

@@ -7,16 +7,17 @@ import Artical from "./pages/Artical/Artical";
 function App() {
   
 	return (
-		<div className="body">
+		<>
 			<BrowserRouter>
 				<Routes>
 					<Route path="/" element={<HomePage />} />
 					<Route path="/artical/:id" element={<Artical />} />
 				</Routes>
+
         <Header />
-			</BrowserRouter>
-		</div>
-	);
+      </BrowserRouter>
+    </>
+  );
 }
 
-export default App
+export default App;
