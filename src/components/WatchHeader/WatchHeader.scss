@@ -1,0 +1,14 @@
+.watch-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+
+    &__title {
+        color: white;
+    }
+}
+
+.logo {
+    height: 3rem;
+}

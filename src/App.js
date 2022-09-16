@@ -1,7 +1,7 @@
 import './App.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import VideoShare from './pages/VideoShare';
+import HomePage from './pages/HomePage/HomePage';
+import WatchLive from './pages/WatchLive/WatchLive';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/video-share" element={<VideoShare />} />
+          <Route path="/watch-live" element={<WatchLive />} />
         </Routes>
       </BrowserRouter>
     </>
