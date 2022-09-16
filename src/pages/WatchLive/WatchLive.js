@@ -27,7 +27,7 @@ const WatchLive = () => {
             <WatchHeader />
             <video className="watch-live__video" src={videoData[0].video} poster={thumbnail} controls></video>
             <div className="comment-cta">
-                <button className="comment-cta__button">ADD COMMENT</button>
+                <button className="button comment-cta__button">ADD COMMENT</button>
                 <input className="comment-cta__stats" type="image" src={showAnalytics ? statsIconActive : statsIconInactive} alt="stats" onClick={toggleAnalytics}/>
                 <div className="comment-cta__icons">
                     <input className={`comment-cta__like ${likeVideo ? "" : "comment-cta__like--inactive"}`} type="image" src={heartIcon} alt="like" onClick={toggleLike}/>
