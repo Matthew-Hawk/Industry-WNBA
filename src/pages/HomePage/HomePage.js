@@ -12,10 +12,10 @@ const HomePage = () => {
 
 			<h1 className="homepage__title">YOUR FEED </h1>		
 
-			<div >
+			<div className="container">
 				{data.map((articleData) => (
 					<div className="box">
-						<Link to='/artical'>
+						<Link className="box__link" to='/artical'>
 						<Articles articleData={articleData} />
 						</Link>
 					</div>
