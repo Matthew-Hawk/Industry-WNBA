@@ -1,4 +1,7 @@
 import './Artical.scss'
+import Articles from "../../components/articles/Articles";
+import data from "../../data/data.json";
+
 
 function Artical() {
   return (
