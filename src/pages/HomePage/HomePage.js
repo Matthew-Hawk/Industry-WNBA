@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Articles from "../../components/articles/Articles";
 
 import Search from "../../components/Search/Search";
@@ -8,7 +9,15 @@ const HomePage = () => {
 	return (
 		<section className="homepage">
 			<Search />
-			<h1 className="homepage__title">YOUR FEED</h1>
+			<div className="homepage__link-container">
+				<Link className="homepage__link" to="/">
+					<h1 className="homepage__title">YOUR FEED </h1>
+				</Link>
+
+				<Link className="homepage__link" to="/trending">
+					<h1 className="homepage__title">WNBA TRENDING</h1>
+				</Link>
+			</div>
 			<div>
 				{data.map((articleData) => (
 					<Articles articleData={articleData} />

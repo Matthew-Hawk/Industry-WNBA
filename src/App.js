@@ -10,19 +10,29 @@ import WatchLive from "./pages/WatchLive/WatchLive";
 import StatsPage from "./pages/Stats/Stats";
 import TeamsPage from "./pages/TeamsPage/TeamsPage";
 import PlayersPage from "./pages/PlayersPage/PlayerPage";
+import TrendingPage from "./pages/TrendingPage/TrandingPage";
 
 function App() {
-  const [ showOnboarding, setShowOnboarding ] = useState(true);
+	const [showOnboarding, setShowOnboarding] = useState(true);
 
 	return (
 		<>
 			<BrowserRouter>
 				<Routes>
-          <Route path="/" element={showOnboarding ? <Navigate to="/onboarding"/> : <HomePage />} />
+					<Route
+						path="/"
+						element={
+							showOnboarding ? <Navigate to="/onboarding" /> : <HomePage />
+						}
+					/>
 					<Route path="/onboarding" element={<WelcomePage />} />
 					<Route path="/onboarding/select-teams" element={<TeamsPage />} />
-					<Route path="/onboarding/select-players" element={<PlayersPage setShowOnboarding={setShowOnboarding}/>} />
+					<Route
+						path="/onboarding/select-players"
+						element={<PlayersPage setShowOnboarding={setShowOnboarding} />}
+					/>
 					<Route path="/videos" element={<VideoPage />} />
+					<Route path="/trending" element={<TrendingPage />} />
 					<Route path="/watch-live" element={<WatchLive />} />
 					<Route path="/artical/:id" element={<Artical />} />
 					<Route path="/stats" element={<StatsPage />} />
