@@ -1,7 +1,6 @@
 import "./TrendingCard.scss";
 
 const TrendingCard = ({ data }) => {
-	console.log(data);
 	return (
 		<section className="trending__section">
 			<div className="trending__container">
