@@ -1,5 +1,7 @@
 import "./Welcome.scss";
 import Logo from "../../assets/images/logo-white.svg";
+import welcomeImage from "../../assets/images/welcome-image.png";
+import { Link } from "react-router-dom";
 
 const WelcomePage = () => {
 	return (
@@ -12,6 +14,7 @@ const WelcomePage = () => {
 				<img alt="" />
 			</div>
 			<div className="welcome__container">
+				<img className="welcome__image" src={welcomeImage} alt="welcome"></img>
 				<h3 className="welcome__title">WELCOME</h3>
 				<span className="welcome__text">
 					Time to connect with your favorite player.
@@ -21,7 +24,7 @@ const WelcomePage = () => {
 				</span>
 			</div>
 
-			<button className="welcome__btn">GET STARTED</button>
+			<Link to="/onboarding/select-teams"><button className="button welcome__btn">GET STARTED</button></Link>
 		</section>
 	);
 };
