@@ -1,5 +1,8 @@
-import "./App.scss"
-import {BrowserRouter, Routes, Route} from "react-router-dom"
+import "./App.scss";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import HomePage from "./pages/HomePage/HomePage";
+import VideoPage from "./pages/VideoPage/VideoPage";
 
 function App() {
 	return (
@@ -7,10 +10,11 @@ function App() {
 			<BrowserRouter>
 				<Routes>
 					<Route path="/" element={<HomePage />} />
+					<Route path="/video" element={<VideoPage />} />
 				</Routes>
 			</BrowserRouter>
 		</>
 	);
 }
 
-export default App
+export default App;

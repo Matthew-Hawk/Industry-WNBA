@@ -1,0 +1,15 @@
+.video {
+	&__section {
+		padding: 0 5%;
+	}
+
+	&__container {
+		width: 100%;
+	}
+
+	&__title {
+		font-size: 0.9rem;
+		color: gray;
+		margin: 0.6rem;
+	}
+}
