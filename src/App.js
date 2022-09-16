@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage/HomePage"
 import Header from  "./components/Header/Header"
 import Artical from "./pages/Artical/Artical";
 import VideoPage from "./pages/VideoPage/VideoPage";
+import WatchLive from "./pages/WatchLive/WatchLive";
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<HomePage />} />
 					<Route path="/videos" element={<VideoPage />} />
-          
+          <Route path="/watch-live" element={<WatchLive />} />
 					<Route path="/artical/:id" element={<Artical />} />
 				</Routes>
 
