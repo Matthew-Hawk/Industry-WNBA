@@ -10,20 +10,20 @@ import watch from "../../data/Icons/watch.svg"
 function Header() {
   return (
     <div className='header'>
-        <NavLink className='header_link'>
-            <img src={home} className='header_icon'></img>
+        <NavLink className='header__link'>
+            <img src={home} className='header__icon'></img>
         </NavLink>
-        <NavLink className='header_link'>
-            <img src={stats} className='header_icon'></img>        
+        <NavLink className='header__link'>
+            <img src={stats} className='header__icon'></img>        
         </NavLink>
-        <NavLink className='header_link'>
-            <img src={watch} className='header_icon'></img>
+        <NavLink className='header__link'>
+            <img src={watch} className='header__icon'></img>
         </NavLink>
-        <NavLink className='header_link'>
-            <img src={forum} className='header_icon'></img>
+        <NavLink className='header__link'>
+            <img src={forum} className='header__icon'></img>
         </NavLink>
-        <NavLink className='header_link'>
-            <img src={play} className='header_icon'></img>
+        <NavLink className='header__link'>
+            <img src={play} className='header__icon'></img>
         </NavLink>
     </div>
   )
