@@ -1,5 +1,8 @@
 import './Nav.scss'
+
 import {NavLink} from "react-router-dom"
+import { useState } from 'react';
+
 import forum from '../../assets/icons/forum.svg'
 import home from '../../assets/icons/home.svg'
 import play from '../../assets/icons/play.svg'
@@ -8,22 +11,29 @@ import watch from "../../assets/icons/watch.svg"
 
 
 function Header() {
+    const [active, setActive] = useState(true)
+
+    function handleClick (){
+        active ? setActive(false) : setActive(true)
+    //    showAnalytics ? setShowAnalytics(false) : setShowAnalytics(true);
+    }
+
   return (
     <div className='header'>
-        <NavLink className='header__link'>
-            <img src={home}  alt='home' className='header__icon'></img>
+        <NavLink onClick={handleClick} to='/'>
+            <img src={home}  alt='home' className={active ? 'header__icon': ''}></img>
         </NavLink>
-        <NavLink className='header__link'>
-            <img src={stats} alt='status' className='header__icon'></img>        
+        <NavLink  onClick={handleClick}>
+            <img src={stats} alt='status' className={active ? 'header__icon': ''}></img>        
         </NavLink>
-        <NavLink className='header__link'>
-            <img src={watch} alt='watch' className='header__icon'></img>
+        <NavLink  onClick={handleClick}  to="/watch-live">
+            <img src={watch} alt='watch'   ></img>
         </NavLink>
-        <NavLink className='header__link'>
-            <img src={forum} alt='forum' className='header__icon'></img>
+        <NavLink >
+            <img src={forum} alt='forum'  ></img>
         </NavLink>
-        <NavLink className='header__link'>
-            <img src={play} alt='play' className='header__icon'></img>
+        <NavLink >
+            <img src={play} alt='play'  ></img>
         </NavLink>
     </div>
   )
