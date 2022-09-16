@@ -20,7 +20,9 @@ const HomePage = () => {
 			</div>
 			<div>
 				{data.map((articleData) => (
+					<Link to='/artical'>
 					<Articles articleData={articleData} />
+					</Link>
 				))}
 			</div>
 		</section>

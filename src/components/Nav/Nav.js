@@ -3,11 +3,11 @@ import './Nav.scss'
 import {NavLink} from "react-router-dom"
 import { useState } from 'react';
 
-import forum from '../../assets/icons/forum.svg'
 import home from '../../assets/icons/home.svg'
-import play from '../../assets/icons/play.svg'
 import stats from '../../assets/icons/stats.svg'
 import watch from "../../assets/icons/watch.svg"
+import play from '../../assets/icons/play.svg'
+import Shop from '../../assets/icons/Shop.svg'
 
 
 function Header() {
@@ -25,14 +25,14 @@ function Header() {
         <NavLink  onClick={()=>handleClick("stats")} to='/stats'>
             <img src={stats} alt='status' className={active==="stats" ? 'header__icon': ''}></img>        
         </NavLink>
-        <NavLink  onClick={()=>handleClick("watch")}  to="/watch-live">
+        <NavLink  onClick={()=>handleClick("watch")}  to="/watch">
             <img src={watch} alt='watch'  className={active==="watch" ? 'header__icon': ''} ></img>
         </NavLink>
-        <NavLink onClick={()=>handleClick("forum")}>
-            <img src={forum} alt='forum' className={active==="forum" ? 'header__icon': ''} ></img>
+        <NavLink onClick={()=>handleClick("play")} to="/play">
+            <img src={play} alt='play' className={`play ${active==="play" ? 'header__icon': ''}`} ></img>
         </NavLink>
-        <NavLink onClick={()=>handleClick("play")}>
-            <img src={play} alt='play' className={active==="play" ? 'header__icon': ''} ></img>
+        <NavLink onClick={()=>handleClick("shop")} to="/store">
+            <img src={Shop} alt='shop' className={active==="shop" ? 'header__icon': ''} ></img>
         </NavLink>
     </div>
   )

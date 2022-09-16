@@ -1,15 +1,14 @@
 import './Artical.scss'
-import Articles from "../../components/articles/Articles";
-import data from "../../data/data.json";
+import Photo from '../../assets/page-links/A1.svg'
+import {Link} from 'react-router-dom'
 
 
 function Artical() {
   return (
     <>
-        <div className='parent'>
-            <div className='image-div'></div>
-            <section className='section-div'></section>
-        </div>
+    <Link to='/'>
+       <img className='article' src={Photo} alt="article page with description"></img>
+       </Link>
     </>
   )
 }
