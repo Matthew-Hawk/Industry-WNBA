@@ -10,10 +10,17 @@ import asia from "../../assets/images/players/asia.svg";
 import tiffany from "../../assets/images/players/tiffany.svg";
 import naz from "../../assets/images/players/naz.svg";
 import rhyne from "../../assets/images/players/rhyne.svg";
+import { useState } from "react";
 
 const PlayersPage = ({ setShowOnboarding }) => {
+	const [ selected, setSelected ] = useState(false);
+
 	const finishOnboarding = () => {
 		setShowOnboarding(false);
+	}
+
+	const selectPlayer = () => {
+		selected ? setSelected(false) : setSelected(true);
 	}
 
 	return (
@@ -25,10 +32,19 @@ const PlayersPage = ({ setShowOnboarding }) => {
 			<h1 className="players__title">Select Favorite Players</h1>
 			<input className="players__search" type="text" placeholder="Search for team or player" />
 
+			<div className={`${selected ? "players__follow--show" : "players__follow"}`}>
+				<h3 className="players__time">Following</h3>
+				<div className="players__container players__container--follow">
+					<input type="image" className="players__img players__img--follow" src={monique} alt="monique" onClick={selectPlayer}/>
+					<h4 className="players__name">Monique Billings</h4>
+				</div>
+			</div>
+			
+
 			<h3 className="players__time">Atlanta Dream</h3>
 			<div className="players__logo-container">
 				<div className="players__container">
-					<img className="players__img" src={monique} alt="monique"/>
+					<input type="image" className={`players__img ${selected? "players__img--follow":""}`} src={monique} alt="monique" onClick={selectPlayer}/>
 					<h4 className="players__name">Monique Billings</h4>
 				</div>
 				<div className="players__container">
