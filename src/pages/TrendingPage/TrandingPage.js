@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import VideoData from "../../data/youtube-data.json";
+import TrendingData from "../../data/trending.json";
 import TrendingCard from "../../components/TrendingCard/TrendingCard";
 
 import "./TrendingPage.scss";
@@ -11,12 +11,15 @@ const TrendingPage = () => {
 	return (
 		<section className="trending-page__section">
 			<Search />
-			{/* <div className="trending=page__container">
-				{VideoData.map((data, i) => (
-					<TrendingCard key={i} data={data} />
-				))}
-			</div> */}
-			<img className="image" src={trending}></img>
+			<h2 className="trending__title">Trending Now</h2>
+			{
+				<div className="trending-page__container">
+					{TrendingData.map((data, i) => (
+						<TrendingCard key={i} data={data} />
+					))}
+				</div>
+			}
+			{/*<img className="image" src={trending}></img>*/}
 		</section>
 	);
 };
