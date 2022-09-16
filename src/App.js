@@ -7,7 +7,7 @@ import Artical from "./pages/Artical/Artical";
 function App() {
   
 	return (
-		<div className="body">
+		<>
 			<BrowserRouter>
 				<Routes>
 					<Route path="/" element={<HomePage />} />
