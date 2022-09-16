@@ -8,3 +8,40 @@
         width: 100%;
     }
 }
+
+.comment-cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    &__button {
+        background-color: $Orange;
+        color: $White;
+        border: none;
+        padding: 0.8rem 1.4rem;
+        border-radius: 3px;
+        font-size: 1rem;
+    }
+
+    &__icons {
+        margin-left: auto;
+    }
+
+    &__like {
+        margin-right: 0.75rem;
+
+        &--inactive {
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+        }
+    }
+
+    &__share {
+        filter: invert(48%) sepia(18%) saturate(3311%) hue-rotate(342deg) brightness(99%) contrast(98%);
+        width: 1.5rem;
+    }
+
+    &__stats {
+        margin-left: 0.5rem;
+    }
+}
