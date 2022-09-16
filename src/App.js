@@ -26,7 +26,7 @@ function App() {
 					<Route path="/videos" element={<VideoPage />} />
 					<Route path="/watch" element={<WatchPage />} />
           <Route path="/watch/:videoId" element={<WatchLive />} />
-					<Route path="/artical/:id" element={<Artical />} />
+					<Route path="/artical" element={<Artical />} />
 					<Route path="/stats" element={<StatsPage />} />
 				</Routes>
 
