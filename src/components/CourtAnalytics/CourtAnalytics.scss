@@ -1,0 +1,17 @@
+@use "../../styles/partials/utilities.scss" as *;
+
+.analytics {
+    padding: 0.25rem 1rem;
+
+    &__title {
+        color: $White;
+        font-size: 1.3rem;
+        letter-spacing: 0.8px;
+    }
+
+    &__image-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+}

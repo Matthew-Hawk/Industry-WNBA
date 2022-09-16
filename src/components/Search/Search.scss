@@ -1,4 +1,4 @@
-.header {
+.search {
 	&__section {
 		background-color: black;
 		padding: 5%;
@@ -13,14 +13,13 @@
 		width: 5rem;
 		height: 3rem;
 	}
-
-	&__search {
+	&__input {
 		background-image: url("../../assets/icons/search-24px.svg");
 		background-repeat: no-repeat;
 		background-position-x: 95%;
 		background-position-y: 50%;
 		height: 2.25rem;
-		width: 70%;
+		width: 100%;
 		border-radius: 1.25rem;
 		border: 0.0625rem solid gray;
 		background-color: white;

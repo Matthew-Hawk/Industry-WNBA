@@ -1,0 +1,17 @@
+.watch-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    padding: 2rem 1rem 1rem;
+
+    &__title {
+        color: white;
+        font-size: 1.3rem;
+        letter-spacing: 1.75px;
+    }
+}
+
+.logo {
+    height: 3rem;
+}

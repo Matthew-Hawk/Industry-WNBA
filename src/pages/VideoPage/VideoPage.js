@@ -1,14 +1,16 @@
 import VideoData from "../../data/youtube-data.json";
 import VideoCard from "../../components/videoCard/VideoCard";
+
 import "./VideoPage.scss";
-import Header from "../../components/header/Header";
+import Search from "../../components/Search/Search";
 
 const VideoPage = () => {
 	return (
 		<section>
-			<Header />
+			<Search />
 			<h1>Trading Videos</h1>
-			<div>
+
+			<div className="videos__container">
 				{VideoData.map((video, i) => (
 					<VideoCard key={i} videoData={video} />
 				))}
