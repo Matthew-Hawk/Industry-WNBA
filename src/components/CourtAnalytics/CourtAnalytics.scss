@@ -1,6 +1,6 @@
 @use "../../styles/partials/utilities.scss" as *;
 
-.live-chat {
+.analytics {
     padding: 0.25rem 1rem;
 
     &__title {
@@ -9,7 +9,9 @@
         letter-spacing: 0.8px;
     }
 
-    &__image {
-        margin-top: 1rem;
+    &__image-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 1.5rem;
     }
 }
