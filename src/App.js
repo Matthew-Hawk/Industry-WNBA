@@ -21,7 +21,7 @@ function App() {
           <Route path="/" element={showOnboarding ? <Navigate to="/onboarding"/> : <HomePage />} />
 					<Route path="/onboarding" element={<WelcomePage />} />
 					<Route path="/onboarding/select-teams" element={<TeamsPage />} />
-					<Route path="/onboarding/select-players" element={<PlayersPage />} />
+					<Route path="/onboarding/select-players" element={<PlayersPage setShowOnboarding={setShowOnboarding}/>} />
 					<Route path="/videos" element={<VideoPage />} />
 					<Route path="/watch-live" element={<WatchLive />} />
 					<Route path="/artical/:id" element={<Artical />} />
