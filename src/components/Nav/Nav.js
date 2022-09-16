@@ -1,4 +1,4 @@
-import './Header.scss'
+import './Nav.scss'
 import {NavLink} from "react-router-dom"
 import forum from '../../assets/icons/forum.svg'
 import home from '../../assets/icons/home.svg'
@@ -11,19 +11,19 @@ function Header() {
   return (
     <div className='header'>
         <NavLink className='header__link'>
-            <img src={home} className='header__icon'></img>
+            <img src={home}  alt='home' className='header__icon'></img>
         </NavLink>
         <NavLink className='header__link'>
-            <img src={stats} className='header__icon'></img>        
+            <img src={stats} alt='status' className='header__icon'></img>        
         </NavLink>
         <NavLink className='header__link'>
-            <img src={watch} className='header__icon'></img>
+            <img src={watch} alt='watch' className='header__icon'></img>
         </NavLink>
         <NavLink className='header__link'>
-            <img src={forum} className='header__icon'></img>
+            <img src={forum} alt='forum' className='header__icon'></img>
         </NavLink>
         <NavLink className='header__link'>
-            <img src={play} className='header__icon'></img>
+            <img src={play} alt='play' className='header__icon'></img>
         </NavLink>
     </div>
   )

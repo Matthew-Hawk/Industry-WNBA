@@ -1,6 +1,6 @@
-import {BrowserRouter, Routes, Route} from "react-router-dom"
-import HomePage from "./pages/HomePage/HomePage"
-import Header from  "./components/Header/Header"
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import HomePage from "./pages/HomePage/HomePage";
+import Nav from './components/Nav/Nav'
 import Artical from "./pages/Artical/Artical";
 import VideoPage from "./pages/VideoPage/VideoPage";
 import WatchLive from "./pages/WatchLive/WatchLive";
@@ -17,7 +17,7 @@ function App() {
 					<Route path="/artical/:id" element={<Artical />} />
 				</Routes>
 
-        <Header />
+        <Nav />
       </BrowserRouter>
     </>
   );
