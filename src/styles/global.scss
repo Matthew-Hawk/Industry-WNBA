@@ -1,0 +1,14 @@
+@use "./partials/utilities.scss" as *;
+@use "./partials/mixins.scss" as *;
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+Link,
+a {
+  text-decoration: none;
+}
+
