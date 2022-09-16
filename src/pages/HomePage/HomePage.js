@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Articles from "../../components/articles/Articles";
 import data from "../../data/data.json";
-import "./HomePage";
+import "./HomePage.scss";
 
 const HomePage = () => {
 	return (
