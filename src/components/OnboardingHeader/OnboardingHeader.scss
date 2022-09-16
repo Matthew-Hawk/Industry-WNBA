@@ -1,0 +1,11 @@
+@use "../../styles/partials/utilities.scss" as *;
+
+.onboarding-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__title {
+        color: $White;
+    }
+}
