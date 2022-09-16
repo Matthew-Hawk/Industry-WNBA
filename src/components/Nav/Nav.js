@@ -11,29 +11,28 @@ import watch from "../../assets/icons/watch.svg"
 
 
 function Header() {
-    const [active, setActive] = useState(true)
+    const [active, setActive] = useState("home");
 
-    function handleClick (){
-        active ? setActive(false) : setActive(true)
-    //    showAnalytics ? setShowAnalytics(false) : setShowAnalytics(true);
+    function handleClick (clicked) {
+        setActive(clicked);
     }
 
   return (
     <div className='header'>
-        <NavLink onClick={handleClick} to='/'>
-            <img src={home}  alt='home' className={active ? 'header__icon': ''}></img>
+        <NavLink onClick={()=>handleClick("home")} to='/'>
+            <img src={home}  alt='home' className={active==="home" ? 'header__icon': ''}></img>
         </NavLink>
-        <NavLink  onClick={handleClick} to='/stats'>
-            <img src={stats} alt='status' className={active ? 'header__icon': ''}></img>        
+        <NavLink  onClick={()=>handleClick("stats")} to='/stats'>
+            <img src={stats} alt='status' className={active==="stats" ? 'header__icon': ''}></img>        
         </NavLink>
-        <NavLink  onClick={handleClick}  to="/watch-live">
-            <img src={watch} alt='watch'   ></img>
+        <NavLink  onClick={()=>handleClick("watch")}  to="/watch-live">
+            <img src={watch} alt='watch'  className={active==="watch" ? 'header__icon': ''} ></img>
         </NavLink>
-        <NavLink >
-            <img src={forum} alt='forum'  ></img>
+        <NavLink onClick={()=>handleClick("forum")}>
+            <img src={forum} alt='forum' className={active==="forum" ? 'header__icon': ''} ></img>
         </NavLink>
-        <NavLink >
-            <img src={play} alt='play'  ></img>
+        <NavLink onClick={()=>handleClick("play")}>
+            <img src={play} alt='play' className={active==="play" ? 'header__icon': ''} ></img>
         </NavLink>
     </div>
   )
