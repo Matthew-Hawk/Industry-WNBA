@@ -8,7 +8,7 @@ const WatchLive = () => {
     return (
         <main className="watch-live">
             <WatchHeader />
-            <video className="watch-live__video" src={videoData[0].video} poster={thumbnail}></video>
+            <video className="watch-live__video" src={videoData[0].video} poster={thumbnail} controls></video>
             <Comments />
         </main>
     )
