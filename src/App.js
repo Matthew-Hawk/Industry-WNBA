@@ -13,10 +13,11 @@ function App() {
 					<Route path="/" element={<HomePage />} />
 					<Route path="/artical/:id" element={<Artical />} />
 				</Routes>
+
         <Header />
-			</BrowserRouter>
-		</div>
-	);
+      </BrowserRouter>
+    </>
+  );
 }
 
-export default App
+export default App;
