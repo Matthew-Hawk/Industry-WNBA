@@ -9,7 +9,7 @@
 	},
 	{
 		"team": "Chicago Sky",
-		"logo": "https://lh3.googleusercontent.com/XHjGzCpN1p6jc_6Fco0VoExwQGE5qcA71DxqkY804CGBe6ND-xAki4gAMwTcFa0T9aKrBtUl4KvTGa5m-DXB1H6R9w"
+		"logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fc/Chicago_Sky_logo.svg/1200px-Chicago_Sky_logo.svg.png"
 	},
 	{
 		"team": "Seatle Storm",
@@ -42,5 +42,9 @@
 	{
 		"team": "Atlanta Dream",
 		"logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/atl.png"
+	},
+	{
+		"team": "New York Libery",
+		"logo": "https://www.oursportscentral.com/graphics/pictures/md20200414-527493.jpg"
 	}
 ]

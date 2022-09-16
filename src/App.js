@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { useState } from "react";
 
 import WelcomePage from "./pages/Welcome/Welcome";
 import HomePage from "./pages/HomePage/HomePage";
@@ -11,21 +12,23 @@ import TeamsPage from "./pages/TeamsPage/TeamsPage";
 import PlayersPage from "./pages/PlayersPage/PlayerPage";
 
 function App() {
+  const [ showOnboarding, setShowOnboarding ] = useState(true);
+
 	return (
 		<>
 			<BrowserRouter>
 				<Routes>
-					<Route path="/welcome" element={<WelcomePage />} />
-					<Route path="/teams" element={<TeamsPage />} />
-					<Route path="/players" element={<PlayersPage />} />
-					<Route path="/homepage" element={<HomePage />} />
+          <Route path="/" element={showOnboarding ? <Navigate to="/onboarding"/> : <HomePage />} />
+					<Route path="/onboarding" element={<WelcomePage />} />
+					<Route path="/onboarding/select-teams" element={<TeamsPage />} />
+					<Route path="/onboarding/select-players" element={<PlayersPage setShowOnboarding={setShowOnboarding}/>} />
 					<Route path="/videos" element={<VideoPage />} />
 					<Route path="/watch-live" element={<WatchLive />} />
 					<Route path="/artical/:id" element={<Artical />} />
 					<Route path="/stats" element={<StatsPage />} />
 				</Routes>
 
-				<Nav />
+				{showOnboarding ? null : <Nav />}
 			</BrowserRouter>
 		</>
 	);
