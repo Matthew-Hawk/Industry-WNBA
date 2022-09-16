@@ -37,4 +37,14 @@
 			flex-direction: column;
 		}
 	}
+
+	&__container {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+}
+
+.icon {
+	margin-right: 1rem;
 }

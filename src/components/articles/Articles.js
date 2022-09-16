@@ -11,6 +11,7 @@ const Articles = ({ articleData }) => {
 				<h3 className="news__title">{articleData.title}</h3>
 				<h4 className="news__author">Author</h4>
 				<p className="news__context">{articleData.content}</p>
+				<h3 className="news__context">Read More</h3>
 			</div>
 		</section>
 	);

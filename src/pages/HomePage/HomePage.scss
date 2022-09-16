@@ -9,7 +9,8 @@
 		color: $White;
 		font-size: 1rem;
 		font-weight: 600;
-		padding: 2% 5%;
+		padding: 2% 0;
+		margin-left:1rem;
 	}
 
 	&__link-container {
@@ -26,4 +27,13 @@
 				brightness(99%) contrast(98%);
 		}
 	}
+}
+
+.box {
+	margin-bottom: 1rem;
+}
+
+.container {
+	margin-left:1rem;
+	width: 90%;
 }
