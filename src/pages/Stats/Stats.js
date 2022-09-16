@@ -2,8 +2,8 @@ import './Stats.scss'
 import Bg from '../../assets/page-links/S1.svg'
 function Stats() {
   return (
-    <div>
-        <img className='img' src={Bg}></img>
+    <div className='img-div'>
+        <img className='img-div__img' src={Bg}></img>
     </div>
   )
 }
