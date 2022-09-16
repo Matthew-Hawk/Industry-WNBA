@@ -11,7 +11,7 @@
 
 	&__container {
 		width: 100%;
-		height: 232px;
+		height: 350px;
 		border-radius: 4px;
 		background-color: $DarkGray;
 	}
@@ -24,5 +24,12 @@
 		color: $White;
 		margin: 0.6rem;
 		font-weight: 500;
+	}
+
+	&__img {
+		width: 100%;
+		height: 200px;
+		object-fit: contain;
+		overflow: hidden;
 	}
 }

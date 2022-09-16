@@ -10,16 +10,15 @@ const HomePage = () => {
 		<section className="homepage">
 			<Search />
 
-			<h1 className="homepage__title">YOUR FEED </h1>		
+			<h1 className="homepage__title">Your Feed</h1>
 
-			<div >
+			<div>
 				{data.map((articleData) => (
 					<div className="box">
-						<Link to='/artical'>
-						<Articles articleData={articleData} />
+						<Link to="/artical">
+							<Articles articleData={articleData} />
 						</Link>
 					</div>
-					
 				))}
 			</div>
 		</section>
