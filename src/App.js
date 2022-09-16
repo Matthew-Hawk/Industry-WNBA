@@ -7,6 +7,8 @@ import Artical from "./pages/Artical/Artical";
 import VideoPage from "./pages/VideoPage/VideoPage";
 import WatchLive from "./pages/WatchLive/WatchLive";
 import StatsPage from "./pages/Stats/Stats";
+import TeamsPage from "./pages/TeamsPage/TeamsPage";
+import PlayersPage from "./pages/PlayersPage/PlayerPage";
 
 function App() {
 	return (
@@ -14,6 +16,8 @@ function App() {
 			<BrowserRouter>
 				<Routes>
 					<Route path="/welcome" element={<WelcomePage />} />
+					<Route path="/teams" element={<TeamsPage />} />
+					<Route path="/players" element={<PlayersPage />} />
 					<Route path="/homepage" element={<HomePage />} />
 					<Route path="/videos" element={<VideoPage />} />
 					<Route path="/watch-live" element={<WatchLive />} />

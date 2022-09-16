@@ -1,0 +1,75 @@
+@use "../../styles/global.scss" as *;
+@use "../../styles/partials/utilities.scss" as *;
+
+.players {
+	&__section {
+		background-color: $Black;
+		padding: 5%;
+	}
+
+	&__logo {
+		height: 3rem;
+	}
+
+	&__title {
+		color: $White;
+		font-size: 20px;
+		font-weight: 500;
+		text-align: center;
+		padding: 2rem 0;
+	}
+
+	&__img {
+		width: 3rem;
+		height: 3rem;
+		border-radius: 50%;
+		background-color: $DarkGray;
+		width: 20%;
+		margin: 0.6rem;
+	}
+
+	&__logo-container {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-wrap: wrap;
+		padding-top: 7% 0;
+	}
+
+	// &__logo-box {
+	// 	width: 33%;
+	// 	height: 120px;
+	// 	display: flex;
+	// 	align-items: center;
+	// 	flex-direction: column;
+	// 	margin: 2% 0;
+	// }
+
+	&__logo-tag {
+		width: 3rem;
+		max-height: 5rem;
+	}
+
+	&__time {
+		font-family: Poppins;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 18px;
+		letter-spacing: -0.019em;
+		text-align: center;
+		color: #c6bdbd;
+		padding: 0.4rem;
+	}
+
+	&__btn {
+		height: 43px;
+		width: 100%;
+		left: 16px;
+		top: 16px;
+		border-radius: 3px;
+		padding: 8px 0px 8px 8px;
+		background: #e75a28;
+		color: $White;
+		margin: 3rem 0;
+	}
+}
