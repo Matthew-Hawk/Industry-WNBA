@@ -25,11 +25,15 @@
 	&__img {
 		border-radius: 50%;
 		background-color: $White;
-		border: 2px solid $Black;
+		border: 3px solid $Black;
 		margin-bottom: 0.5rem;
 
 		&:hover {
-			border: 2px solid $Orange;
+			border: 3px solid $Orange;
+		}
+
+		&--follow {
+			border: 3px solid $Orange;
 		}
 	}
 
@@ -39,6 +43,11 @@
 		flex-direction: column;
 		justify-content: space-between;
 		margin-bottom: 1.25rem;
+
+		&--follow {
+			width: 21%;
+			margin-left: 1rem;
+		}
 	}
 
 	&__name {
@@ -85,6 +94,15 @@
 
 		&::placeholder {
 			color: $DarkGray;
+		}
+	}
+
+	&__follow {
+		display: none;
+
+		&--show {
+			display: block;
+			width: 100%;
 		}
 	}
 }
