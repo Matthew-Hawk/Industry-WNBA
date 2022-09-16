@@ -1,0 +1,41 @@
+@use "../../styles/global.scss" as *;
+@use "../../styles/partials/utilities.scss" as *;
+
+.trending-page {
+	&__section {
+		background-color: $Black;
+		padding: 5%;
+	}
+
+	&__title {
+		color: $White;
+		font-size: 1rem;
+		font-weight: 400;
+		padding: 1% 5%;
+	}
+
+	&__link-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	&__link {
+		width: 47%;
+
+		&:active {
+			filter: invert(48%) sepia(18%) saturate(3311%) hue-rotate(342deg)
+				brightness(99%) contrast(98%);
+		}
+	}
+
+	&__div {
+		color: white;
+	}
+}
+
+.image {
+	position: relative;
+	top: -15px;
+	width: 100%;
+}

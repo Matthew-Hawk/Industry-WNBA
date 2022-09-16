@@ -3,12 +3,37 @@
 
 .homepage {
 	background-color: $Black;
-	padding: 7% 0;
+	padding: 5%;
 
 	&__title {
 		color: $White;
 		font-size: 1rem;
 		font-weight: 600;
-		padding: 2% 5%;
+		padding: 2% 0;
+		margin-left:1rem;
 	}
+
+	&__link-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	&__link {
+		width: 47%;
+
+		&:active {
+			filter: invert(48%) sepia(18%) saturate(3311%) hue-rotate(342deg)
+				brightness(99%) contrast(98%);
+		}
+	}
+}
+
+.box {
+	margin-bottom: 1rem;
+}
+
+.container {
+	margin-left:1rem;
+	width: 90%;
 }

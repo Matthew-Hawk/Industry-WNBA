@@ -1,5 +1,6 @@
 import './WatchLive.scss'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import thumbnail from '../../assets/images/video-thumbnail.png';
 import heartIcon from '../../assets/icons/heart.svg';
 import shareIcon from '../../assets/icons/share.svg';
@@ -31,7 +32,9 @@ const WatchLive = () => {
                 <input className="comment-cta__stats" type="image" src={showAnalytics ? statsIconActive : statsIconInactive} alt="stats" onClick={toggleAnalytics}/>
                 <div className="comment-cta__icons">
                     <input className={`comment-cta__like ${likeVideo ? "" : "comment-cta__like--inactive"}`} type="image" src={heartIcon} alt="like" onClick={toggleLike}/>
+                    <Link to="/watch/:videoId/share">
                     <input className="comment-cta__share" type="image" src={shareIcon} alt="share"/>
+                    </Link>
                 </div>
             </div>
             {showAnalytics ? <CourtAnalytics /> : <Comments />}
